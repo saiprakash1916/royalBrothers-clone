@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Rentals in Bangalore | Travel Safe with Sanitized Two Wheelers</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap-4.5.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <section id="topBar">
+        <article>
+            <span><i class="fas fa-phone-alt"></i></span>
+            <span>+917795687594</span>
+            <span>/+919019595595</span>
+        </article>
+    </section>
+    <!-------narbar compoment start here-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Tariff</a>
+            <a href="#">RoyalBrothersX</a>
+            <a href="#">Test Ride Arther 450X</a>
+            <a href="#">Off Road Training</a>
+            <a href="#">partner With us</a>
+            <a href="#">Blog</a>
+            <a href="#">Indian Bike Routes</a>
+            <a href="#">Inter-city Travel</a>
+            <a href="#">About Us</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Bike Tour</a>
+            <a href="#">Pravicy Policy</a>
+            <a href="#">FAQ</a>
+            <a href="#">Reach Us</a>
+        </div>
+        <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>   
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Tariff <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Whats's new?
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">RoyalBrothersX</a>
+                        <a class="dropdown-item" href="#">Test Ride Ather <br> 450X</a>
+                        <a class="dropdown-item" href="#">Inter-city travel</a>
+                    </div>
+                </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">offers <span class="sr-only">(current)</span></a>
+            </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Pertner with us?
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Earn with us</a>
+                        <a class="dropdown-item" href="#">Own franchise</a>
+                    </div>
+                </li>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-white" data-toggle="modal" data-target="#exampleModal" id="search">
+                <span><i class="fas fa-search"></i></span> Search
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade my-8" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <section class="container my-12  ">
+                                <article class="col-md-12 bg-white mx-auto ">
+                                    <h4 class="text-uppercase text-left text-primary pt-2 pb-2">
+                                        Search your ride
+                                    </h4>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="username">Pickup</label>
+                                            <div class="" style="display: flex;"><input class="form-control" type="text"
+                                                    placeholder="Date" id="username">
+                                                <input class="form-control" type="text" placeholder="Time" id="username">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password">Dropoff</label>
+                                            <div class="" style="display: flex;"><input class="form-control" type="text"
+                                                    placeholder="Date" id="username">
+                                                <input class="form-control" type="text" placeholder="Time" id="username">
+                                            </div>
+            
+                                        </div>
+                                        <div class="form-group"><button class="btn btn-block  bg-warning">login</button></div>
+                                        <p class="text-center">Looking for intercity Booking?</p>
+                                    </form>
+                                </article>
+                            </section>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+
+            </ul>
+        </div>
+        <div id="rnav">
+            <ul>    
+            <button type="button" id="mybtn" class="btn btn-outline-warning" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Location</button>
+            
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <form>
+                            <div class="top">
+                                <div class="logo">
+                                    <img src="./images/logo.png" alt="logo">
+                                </div>
+                                <h6 class="bikeRental">| Bike Rentals</h6>
+                            </div>
+                            <form class="search">
+                                <input class="form-control me-2" type="search" placeholder="Search or type city to select" aria-label="Search">
+                            </form>
+                            <div class="row">
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Agra.jpg" alt="">
+                                        <p>Agra</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Ahmedabad.jpg" alt="">
+                                        <p>Ahmedabad</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Alleppy.jpg" alt="">
+                                        <p>Alleppy</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Amritsar.jpg" alt="">
+                                        <p>Amritsar</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Andaman.jpg" alt="">
+                                        <p>Andaman <br>Nicobar</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Bangalore.jpg" alt="">
+                                        <p>Bangalore</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Bankok.jpg" alt="">
+                                        <p>Bangcock</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Belagaum.jpg" alt="">
+                                        <p>belagi</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Bhubneswar.jpg" alt="">
+                                        <p>Bhubaneswar</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Bhuj.jpg" alt="">
+                                        <p>Bhuj</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Calicut-city-icon.jpg" alt="">
+                                        <p>Calicut</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Chandigarh.jpg" alt="">
+                                        <p>Chandigarh</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Chennai.jpg" alt="">
+                                        <p>Chennai</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Chikmagalur.jpg" alt="">
+                                        <p>Chikagalur</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Cochin.jpg" alt="">
+                                        <p>Cochain</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Coimbatore.jpg" alt="">
+                                        <p>Coimbatore</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Andaman.jpg" alt="">
+                                        <p>Coorg- <br>Kushalnagar</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Coorg-Madikeri.jpg" alt="">
+                                        <p>Coorg- <br>Madikeri</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Davangere.jpg" alt="">
+                                        <p>Davanagere</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Delhi.jpg" alt="">
+                                        <p>Delhi</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Dharmshala.jpg" alt="">
+                                        <p>Dharamashala</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Ganpati-pule.jpg" alt="">
+                                        <p>Ganapati <br>pule</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Gandhinagar.jpg" alt="">
+                                        <p>Gandhinagar</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Goa.jpg" alt="">
+                                        <p>Goa</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Guntur.jpg" alt="">
+                                        <p>Guntur</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Gurugram.jpg" alt="">
+                                        <p>gurugram</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Guwahati.jpg" alt="">
+                                        <p>Guwahati</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Hubli.jpg" alt="">
+                                        <p>Hubli- <br>Dharwad</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Hyderabad.jpg" alt="">
+                                        <p>Hyderabad</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Indore.jpg" alt="">
+                                        <p>Indore</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Jaipur.jpg" alt="">
+                                        <p>jaipur</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Jaisalmer.jpg" alt="">
+                                        <p>Jaisalmer</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Jodhpur.jpg" alt="">
+                                        <p>Jodhpur</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Kathmandu.jpg" alt="">
+                                        <p>Kathmandu</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Kolkata.jpg" alt="">
+                                        <p>kolkata</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Konark.jpg" alt="">
+                                        <p>Konark</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Lucknow.jpg" alt="">
+                                        <p>Lucknow</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Manali.jpg" alt="">
+                                        <p>Manali</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Mangalore.jpg" alt="">
+                                        <p>Mangalore</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Mohali.jpg" alt="">
+                                        <p>Mohali</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Mount-abu.jpg" alt="">
+                                        <p>Mount Abu</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Mumbai.jpg" alt="">
+                                        <p>Mumbai</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Mysore.jpg" alt="">
+                                        <p>Mysore</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Nashik.jpg" alt="">
+                                        <p>Nashik</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Ooty.jpg" alt="">
+                                        <p>Ooty</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Patayya.jpg" alt="">
+                                        <p>Pattaya</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Phuket.jpg" alt="">
+                                        <p>phuket</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Pondicherry.jpg" alt="">
+                                        <p>Pondicherry</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Pune.jpg" alt="">
+                                        <p>Pune</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Puri.jpg" alt="">
+                                        <p>Puri</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Ranchi.jpg" alt="">
+                                        <p>Ranchi</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/RIshikesh.jpg" alt="">
+                                        <p>Rishikesh</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Sakleshpur.jpg" alt="">
+                                        <p>Sakleshpur</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Siliguri.jpg" alt="">
+                                        <p>Siliguri</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Srinagar.jpg" alt="">
+                                        <p>Srinagar</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Surat.jpg" alt="">
+                                        <p>Surat</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Tirupati1.jpg" alt="">
+                                        <p>Tirupati</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Trivandrum.jpg" alt="">
+                                        <p>Trivanduram</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Udaipur.jpg" alt="">
+                                        <p>Udaipur</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Udupi-manipal.jpg" alt="">
+                                        <p>Udupi- <br>manipal</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Vijaywada.jpg" alt="">
+                                        <p>Vijayawada</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Vizag.jpg" alt="">
+                                        <p>Vizag</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <a href="" class="icons"><img src="./images/Wayanad.jpg" alt="">
+                                        <p>Wayanad</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+                     
+                <br>
+                <li>
+                    <button type="button" class="btn btn-outline-secondary" id="login">login</button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-outline-warning" id="signup">signup</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-------narbar compoment end here-->
+
+    <!-------slider block start here-->
+    <section id="sliderBlock">
+        <article class="jumbotron">
+            <main class="container">
+            <div class="formBlock card col-md-4">
+                <form class="card-body">
+                    <h2>Search your next ride</h2>
+                    <div class="form-group">
+                        <label for="Pickup">Pickup</label>
+                        <div class="row">
+                            <div class="col-6">
+                                <input class="form-control" type="date" name="pickupdate" id="pickupdate" placeholder="Date">   
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control" type="time" name="picktime" id="picktime" placeholder="Time">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="dropoff">Dropoff</label>
+                        <div class="row">
+                            <div class="col-6">
+                                <input class="form-control" type="date" name="pickupdate" id="pickupdate" placeholder="Date">
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control" type="time" name="picktime" id="picktime" placeholder="Time">
+                            </div>
+                        </div>                         
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-warning custom_button btn-block">Search</button>
+                    </div>
+                </form>
+            </div>
+            </main>
+        </article>
+    </section>
+    <!-------slider block end here-->
+    <section class="santized">
+        <article>
+            <div class="bikes">
+                <div class="bike1">
+                    <img src="./images/fz bike.png" alt="fz">
+                </div>
+                <div class="bike2">
+                    <img src="./images/royal bike.png" alt="">
+                </div>
+            </div>
+            <div class="tools">
+                <div class="umber">
+                    <img src="./images/umber.png" alt="">
+                    <p>Vehicle Insurance</p>
+                </div>
+                <div class="triangle">
+                    <img src="./images/tools.png" alt="">
+                    <p>24/7 Roadside Assistance</p>
+                </div>
+                <div class="spaner">
+                    <img src="./images/tool.png" alt="">
+                    <p>Bike Maintenance</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!---------intoducing page start here-->
+    <section class="introduce">
+        <article>
+           <div>
+               <h5>Introducing</h5>
+               <h1>Royal Brothers <span class="big">X</span></h1>
+           </div>
+           <div class="rent">
+            <div class="bike">
+                <img src="./images/bike.png" alt="">
+            </div>
+            <div class="information">
+                <h6>Now rent vehicles on monthly subscription (1-9 months)</h6>
+                <div class="amount">
+                    <ul class="month">
+                        <li>Pay per month</li>
+                        <li>Sanitized bikes</li>
+                    </ul>
+                    <ul class="home">
+                        <li>Free home delivery</li>
+                        <li>Free maintenance</li>
+                    </ul>
+                </div>
+                <button class="Explorebuttton btn-white">EXPLORE</button>
+            </div>
+           </div>
+        </article>
+    </section>
+    <!---------intoducing page end here-->
+
+    <!----------bike rent start here-->
+    <div class="our">
+        <b>OUR FLEET</b>
+    </div>
+    <section class="container my-10">
+        <article class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <h2 class="card-title">Honda Activa 3G</h2>
+                    <img src="./images/bike1.png" alt="" class="card-img-top">
+                    <!----------card body-->
+                    <div class="card-body">                 
+                        <p class="card-text">₹12/hour</p>
+                        <button class="btn btn-warning my-1 custom_button btn-block">BOOK NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <h2 class="card-title">Honda Activa 5G</h2>
+                    <img src="./images/bike2.png" alt="" class="card-img-top">
+                    <!----------card body-->
+                    <div class="card-body">                 
+                        <p class="card-text">₹15/hour</p>
+                        <button class="btn btn-warning my-1 custom_button btn-block">BOOK NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <h2 class="card-title">Royal Enfield Classic 350</h2>
+                    <img src="./images/bike3.png" alt="" class="card-img-top">
+                    <!----------card body-->
+                    <div class="card-body">                 
+                        <p class="card-text">₹35/hour</p>
+                        <button class="btn btn-warning my-1 custom_button btn-block">BOOK NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <h2 class="card-title">Royal Enfield Classic 350</h2>
+                    <img src="./images/bike3.png" alt="" class="card-img-top">
+                    <!----------card body-->
+                    <div class="card-body">         
+                        <p class="card-text">₹35/hour</p>
+                        <button class="btn btn-warning my-1 custom_button btn-block">BOOK NOW</button>
+                    </div>
+                </div>
+            </div>
+            <h6 class="tax">* Excluding of all taxes</h6>
+        </article>
+    </section>
+    <!----------bike rent start here-->
+
+    <!---------slider part start here-->
+    <div class="quality">
+        WE BELIEVE IN QUALITY
+    </div>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./images/slider1.png" alt="Los Angeles" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+            <img src="./images/slider2.png" alt="Chicago" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+            <img src="./images/slider3.png" alt="New York" width="1100" height="500">
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+    <!---------slider part start here-->
+   
+    <script src="./jquery/jquery-3.5.1.min.js"></script>
+    <script src="./bootstrap/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+    <script src="./royal.js"></script>
+</body>
+</html>
